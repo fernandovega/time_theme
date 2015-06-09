@@ -1,0 +1,1292 @@
+@charset "UTF-8";
+/*!
+ *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH -------------------------- */
+@font-face { font-family: 'FontAwesome'; src: url("../fonts/fontawesome-webfont.eot?v=4.2.0"); src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.2.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=4.2.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.2.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular") format("svg"); font-weight: normal; font-style: normal; }
+.elgg-icon { display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+/* makes the font 33% larger relative to the icon container */
+.elgg-icon-lg { font-size: 1.33333em; line-height: 0.75em; vertical-align: -15%; }
+
+.elgg-icon-2x { font-size: 2em; }
+
+.elgg-icon-3x { font-size: 3em; }
+
+.elgg-icon-4x { font-size: 4em; }
+
+.elgg-icon-5x { font-size: 5em; }
+
+.elgg-icon-fw { width: 1.28571em; text-align: center; }
+
+.elgg-icon-ul { padding-left: 0; margin-left: 2.14286em; list-style-type: none; }
+.elgg-icon-ul > li { position: relative; }
+
+.elgg-icon-li { position: absolute; left: -2.14286em; width: 2.14286em; top: 0.14286em; text-align: center; }
+.elgg-icon-li.elgg-icon-lg { left: -1.85714em; }
+
+.elgg-icon-border { padding: .2em .25em .15em; border: solid 0.08em #eee; border-radius: .1em; }
+
+.pull-right { float: right; }
+
+.pull-left { float: left; }
+
+.elgg-icon.pull-left { margin-right: .3em; }
+.elgg-icon.pull-right { margin-left: .3em; }
+
+.elgg-icon-spin { -webkit-animation: fa-spin 2s infinite linear; animation: fa-spin 2s infinite linear; }
+
+@-webkit-keyframes fa-spin { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(359deg); transform: rotate(359deg); } }
+@keyframes fa-spin { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(359deg); transform: rotate(359deg); } }
+.elgg-icon-rotate-90 { filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1); -webkit-transform: rotate(90deg); -ms-transform: rotate(90deg); transform: rotate(90deg); }
+
+.elgg-icon-rotate-180 { filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2); -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); }
+
+.elgg-icon-rotate-270 { filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); -webkit-transform: rotate(270deg); -ms-transform: rotate(270deg); transform: rotate(270deg); }
+
+.elgg-icon-flip-horizontal { filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0); -webkit-transform: scale(-1, 1); -ms-transform: scale(-1, 1); transform: scale(-1, 1); }
+
+.elgg-icon-flip-vertical { filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2); -webkit-transform: scale(1, -1); -ms-transform: scale(1, -1); transform: scale(1, -1); }
+
+:root .elgg-icon-rotate-90, :root .elgg-icon-rotate-180, :root .elgg-icon-rotate-270, :root .elgg-icon-flip-horizontal, :root .elgg-icon-flip-vertical { filter: none; }
+
+.elgg-icon-stack { position: relative; display: inline-block; width: 2em; height: 2em; line-height: 2em; vertical-align: middle; }
+
+.elgg-icon-stack-1x, .elgg-icon-stack-2x { position: absolute; left: 0; width: 100%; text-align: center; }
+
+.elgg-icon-stack-1x { line-height: inherit; }
+
+.elgg-icon-stack-2x { font-size: 2em; }
+
+.elgg-icon-inverse { color: #fff; }
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen readers do not read off random characters that represent icons */
+.elgg-icon-glass:before { content: ""; }
+
+.elgg-icon-music:before { content: ""; }
+
+.elgg-icon-search:before { content: ""; }
+
+.elgg-icon-envelope-o:before { content: ""; }
+
+.elgg-icon-heart:before { content: ""; }
+
+.elgg-icon-star:before { content: ""; }
+
+.elgg-icon-star-o:before { content: ""; }
+
+.elgg-icon-user:before { content: ""; }
+
+.elgg-icon-film:before { content: ""; }
+
+.elgg-icon-th-large:before { content: ""; }
+
+.elgg-icon-th:before { content: ""; }
+
+.elgg-icon-th-list:before { content: ""; }
+
+.elgg-icon-check:before { content: ""; }
+
+.elgg-icon-remove:before, .elgg-icon-close:before, .elgg-icon-times:before { content: ""; }
+
+.elgg-icon-search-plus:before { content: ""; }
+
+.elgg-icon-search-minus:before { content: ""; }
+
+.elgg-icon-power-off:before { content: ""; }
+
+.elgg-icon-signal:before { content: ""; }
+
+.elgg-icon-gear:before, .elgg-icon-cog:before { content: ""; }
+
+.elgg-icon-trash-o:before { content: ""; }
+
+.elgg-icon-home:before { content: ""; }
+
+.elgg-icon-file-o:before { content: ""; }
+
+.elgg-icon-clock-o:before { content: ""; }
+
+.elgg-icon-road:before { content: ""; }
+
+.elgg-icon-download:before { content: ""; }
+
+.elgg-icon-arrow-circle-o-down:before { content: ""; }
+
+.elgg-icon-arrow-circle-o-up:before { content: ""; }
+
+.elgg-icon-inbox:before { content: ""; }
+
+.elgg-icon-play-circle-o:before { content: ""; }
+
+.elgg-icon-rotate-right:before, .elgg-icon-repeat:before { content: ""; }
+
+.elgg-icon-refresh:before { content: ""; }
+
+.elgg-icon-list-alt:before { content: ""; }
+
+.elgg-icon-lock:before { content: ""; }
+
+.elgg-icon-flag:before { content: ""; }
+
+.elgg-icon-headphones:before { content: ""; }
+
+.elgg-icon-volume-off:before { content: ""; }
+
+.elgg-icon-volume-down:before { content: ""; }
+
+.elgg-icon-volume-up:before { content: ""; }
+
+.elgg-icon-qrcode:before { content: ""; }
+
+.elgg-icon-barcode:before { content: ""; }
+
+.elgg-icon-tag:before { content: ""; }
+
+.elgg-icon-tags:before { content: ""; }
+
+.elgg-icon-book:before { content: ""; }
+
+.elgg-icon-bookmark:before { content: ""; }
+
+.elgg-icon-print:before { content: ""; }
+
+.elgg-icon-camera:before { content: ""; }
+
+.elgg-icon-font:before { content: ""; }
+
+.elgg-icon-bold:before { content: ""; }
+
+.elgg-icon-italic:before { content: ""; }
+
+.elgg-icon-text-height:before { content: ""; }
+
+.elgg-icon-text-width:before { content: ""; }
+
+.elgg-icon-align-left:before { content: ""; }
+
+.elgg-icon-align-center:before { content: ""; }
+
+.elgg-icon-align-right:before { content: ""; }
+
+.elgg-icon-align-justify:before { content: ""; }
+
+.elgg-icon-list:before { content: ""; }
+
+.elgg-icon-dedent:before, .elgg-icon-outdent:before { content: ""; }
+
+.elgg-icon-indent:before { content: ""; }
+
+.elgg-icon-video-camera:before { content: ""; }
+
+.elgg-icon-photo:before, .elgg-icon-image:before, .elgg-icon-picture-o:before { content: ""; }
+
+.elgg-icon-pencil:before { content: ""; }
+
+.elgg-icon-map-marker:before { content: ""; }
+
+.elgg-icon-adjust:before { content: ""; }
+
+.elgg-icon-tint:before { content: ""; }
+
+.elgg-icon-edit:before, .elgg-icon-pencil-square-o:before { content: ""; }
+
+.elgg-icon-share-square-o:before { content: ""; }
+
+.elgg-icon-check-square-o:before { content: ""; }
+
+.elgg-icon-arrows:before { content: ""; }
+
+.elgg-icon-step-backward:before { content: ""; }
+
+.elgg-icon-fast-backward:before { content: ""; }
+
+.elgg-icon-backward:before { content: ""; }
+
+.elgg-icon-play:before { content: ""; }
+
+.elgg-icon-pause:before { content: ""; }
+
+.elgg-icon-stop:before { content: ""; }
+
+.elgg-icon-forward:before { content: ""; }
+
+.elgg-icon-fast-forward:before { content: ""; }
+
+.elgg-icon-step-forward:before { content: ""; }
+
+.elgg-icon-eject:before { content: ""; }
+
+.elgg-icon-chevron-left:before { content: ""; }
+
+.elgg-icon-chevron-right:before { content: ""; }
+
+.elgg-icon-plus-circle:before { content: ""; }
+
+.elgg-icon-minus-circle:before { content: ""; }
+
+.elgg-icon-times-circle:before { content: ""; }
+
+.elgg-icon-check-circle:before { content: ""; }
+
+.elgg-icon-question-circle:before { content: ""; }
+
+.elgg-icon-info-circle:before { content: ""; }
+
+.elgg-icon-crosshairs:before { content: ""; }
+
+.elgg-icon-times-circle-o:before { content: ""; }
+
+.elgg-icon-check-circle-o:before { content: ""; }
+
+.elgg-icon-ban:before { content: ""; }
+
+.elgg-icon-arrow-left:before { content: ""; }
+
+.elgg-icon-arrow-right:before { content: ""; }
+
+.elgg-icon-arrow-up:before { content: ""; }
+
+.elgg-icon-arrow-down:before { content: ""; }
+
+.elgg-icon-mail-forward:before, .elgg-icon-share:before { content: ""; }
+
+.elgg-icon-expand:before { content: ""; }
+
+.elgg-icon-compress:before { content: ""; }
+
+.elgg-icon-plus:before { content: ""; }
+
+.elgg-icon-minus:before { content: ""; }
+
+.elgg-icon-asterisk:before { content: ""; }
+
+.elgg-icon-exclamation-circle:before { content: ""; }
+
+.elgg-icon-gift:before { content: ""; }
+
+.elgg-icon-leaf:before { content: ""; }
+
+.elgg-icon-fire:before { content: ""; }
+
+.elgg-icon-eye:before { content: ""; }
+
+.elgg-icon-eye-slash:before { content: ""; }
+
+.elgg-icon-warning:before, .elgg-icon-exclamation-triangle:before { content: ""; }
+
+.elgg-icon-plane:before { content: ""; }
+
+.elgg-icon-calendar:before { content: ""; }
+
+.elgg-icon-random:before { content: ""; }
+
+.elgg-icon-comment:before { content: ""; }
+
+.elgg-icon-magnet:before { content: ""; }
+
+.elgg-icon-chevron-up:before { content: ""; }
+
+.elgg-icon-chevron-down:before { content: ""; }
+
+.elgg-icon-retweet:before { content: ""; }
+
+.elgg-icon-shopping-cart:before { content: ""; }
+
+.elgg-icon-folder:before { content: ""; }
+
+.elgg-icon-folder-open:before { content: ""; }
+
+.elgg-icon-arrows-v:before { content: ""; }
+
+.elgg-icon-arrows-h:before { content: ""; }
+
+.elgg-icon-bar-chart-o:before, .elgg-icon-bar-chart:before { content: ""; }
+
+.elgg-icon-twitter-square:before { content: ""; }
+
+.elgg-icon-facebook-square:before { content: ""; }
+
+.elgg-icon-camera-retro:before { content: ""; }
+
+.elgg-icon-key:before { content: ""; }
+
+.elgg-icon-gears:before, .elgg-icon-cogs:before { content: ""; }
+
+.elgg-icon-comments:before { content: ""; }
+
+.elgg-icon-thumbs-o-up:before { content: ""; }
+
+.elgg-icon-thumbs-o-down:before { content: ""; }
+
+.elgg-icon-star-half:before { content: ""; }
+
+.elgg-icon-heart-o:before { content: ""; }
+
+.elgg-icon-sign-out:before { content: ""; }
+
+.elgg-icon-linkedin-square:before { content: ""; }
+
+.elgg-icon-thumb-tack:before { content: ""; }
+
+.elgg-icon-external-link:before { content: ""; }
+
+.elgg-icon-sign-in:before { content: ""; }
+
+.elgg-icon-trophy:before { content: ""; }
+
+.elgg-icon-github-square:before { content: ""; }
+
+.elgg-icon-upload:before { content: ""; }
+
+.elgg-icon-lemon-o:before { content: ""; }
+
+.elgg-icon-phone:before { content: ""; }
+
+.elgg-icon-square-o:before { content: ""; }
+
+.elgg-icon-bookmark-o:before { content: ""; }
+
+.elgg-icon-phone-square:before { content: ""; }
+
+.elgg-icon-twitter:before { content: ""; }
+
+.elgg-icon-facebook:before { content: ""; }
+
+.elgg-icon-github:before { content: ""; }
+
+.elgg-icon-unlock:before { content: ""; }
+
+.elgg-icon-credit-card:before { content: ""; }
+
+.elgg-icon-rss:before { content: ""; }
+
+.elgg-icon-hdd-o:before { content: ""; }
+
+.elgg-icon-bullhorn:before { content: ""; }
+
+.elgg-icon-bell:before { content: ""; }
+
+.elgg-icon-certificate:before { content: ""; }
+
+.elgg-icon-hand-o-right:before { content: ""; }
+
+.elgg-icon-hand-o-left:before { content: ""; }
+
+.elgg-icon-hand-o-up:before { content: ""; }
+
+.elgg-icon-hand-o-down:before { content: ""; }
+
+.elgg-icon-arrow-circle-left:before { content: ""; }
+
+.elgg-icon-arrow-circle-right:before { content: ""; }
+
+.elgg-icon-arrow-circle-up:before { content: ""; }
+
+.elgg-icon-arrow-circle-down:before { content: ""; }
+
+.elgg-icon-globe:before { content: ""; }
+
+.elgg-icon-wrench:before { content: ""; }
+
+.elgg-icon-tasks:before { content: ""; }
+
+.elgg-icon-filter:before { content: ""; }
+
+.elgg-icon-briefcase:before { content: ""; }
+
+.elgg-icon-arrows-alt:before { content: ""; }
+
+.elgg-icon-group:before, .elgg-icon-users:before { content: ""; }
+
+.elgg-icon-chain:before, .elgg-icon-link:before { content: ""; }
+
+.elgg-icon-cloud:before { content: ""; }
+
+.elgg-icon-flask:before { content: ""; }
+
+.elgg-icon-cut:before, .elgg-icon-scissors:before { content: ""; }
+
+.elgg-icon-copy:before, .elgg-icon-files-o:before { content: ""; }
+
+.elgg-icon-paperclip:before { content: ""; }
+
+.elgg-icon-save:before, .elgg-icon-floppy-o:before { content: ""; }
+
+.elgg-icon-square:before { content: ""; }
+
+.elgg-icon-navicon:before, .elgg-icon-reorder:before, .elgg-icon-bars:before { content: ""; }
+
+.elgg-icon-list-ul:before { content: ""; }
+
+.elgg-icon-list-ol:before { content: ""; }
+
+.elgg-icon-strikethrough:before { content: ""; }
+
+.elgg-icon-underline:before { content: ""; }
+
+.elgg-icon-table:before { content: ""; }
+
+.elgg-icon-magic:before { content: ""; }
+
+.elgg-icon-truck:before { content: ""; }
+
+.elgg-icon-pinterest:before { content: ""; }
+
+.elgg-icon-pinterest-square:before { content: ""; }
+
+.elgg-icon-google-plus-square:before { content: ""; }
+
+.elgg-icon-google-plus:before { content: ""; }
+
+.elgg-icon-money:before { content: ""; }
+
+.elgg-icon-caret-down:before { content: ""; }
+
+.elgg-icon-caret-up:before { content: ""; }
+
+.elgg-icon-caret-left:before { content: ""; }
+
+.elgg-icon-caret-right:before { content: ""; }
+
+.elgg-icon-columns:before { content: ""; }
+
+.elgg-icon-unsorted:before, .elgg-icon-sort:before { content: ""; }
+
+.elgg-icon-sort-down:before, .elgg-icon-sort-desc:before { content: ""; }
+
+.elgg-icon-sort-up:before, .elgg-icon-sort-asc:before { content: ""; }
+
+.elgg-icon-envelope:before { content: ""; }
+
+.elgg-icon-linkedin:before { content: ""; }
+
+.elgg-icon-rotate-left:before, .elgg-icon-undo:before { content: ""; }
+
+.elgg-icon-legal:before, .elgg-icon-gavel:before { content: ""; }
+
+.elgg-icon-dashboard:before, .elgg-icon-tachometer:before { content: ""; }
+
+.elgg-icon-comment-o:before { content: ""; }
+
+.elgg-icon-comments-o:before { content: ""; }
+
+.elgg-icon-flash:before, .elgg-icon-bolt:before { content: ""; }
+
+.elgg-icon-sitemap:before { content: ""; }
+
+.elgg-icon-umbrella:before { content: ""; }
+
+.elgg-icon-paste:before, .elgg-icon-clipboard:before { content: ""; }
+
+.elgg-icon-lightbulb-o:before { content: ""; }
+
+.elgg-icon-exchange:before { content: ""; }
+
+.elgg-icon-cloud-download:before { content: ""; }
+
+.elgg-icon-cloud-upload:before { content: ""; }
+
+.elgg-icon-user-md:before { content: ""; }
+
+.elgg-icon-stethoscope:before { content: ""; }
+
+.elgg-icon-suitcase:before { content: ""; }
+
+.elgg-icon-bell-o:before { content: ""; }
+
+.elgg-icon-coffee:before { content: ""; }
+
+.elgg-icon-cutlery:before { content: ""; }
+
+.elgg-icon-file-text-o:before { content: ""; }
+
+.elgg-icon-building-o:before { content: ""; }
+
+.elgg-icon-hospital-o:before { content: ""; }
+
+.elgg-icon-ambulance:before { content: ""; }
+
+.elgg-icon-medkit:before { content: ""; }
+
+.elgg-icon-fighter-jet:before { content: ""; }
+
+.elgg-icon-beer:before { content: ""; }
+
+.elgg-icon-h-square:before { content: ""; }
+
+.elgg-icon-plus-square:before { content: ""; }
+
+.elgg-icon-angle-double-left:before { content: ""; }
+
+.elgg-icon-angle-double-right:before { content: ""; }
+
+.elgg-icon-angle-double-up:before { content: ""; }
+
+.elgg-icon-angle-double-down:before { content: ""; }
+
+.elgg-icon-angle-left:before { content: ""; }
+
+.elgg-icon-angle-right:before { content: ""; }
+
+.elgg-icon-angle-up:before { content: ""; }
+
+.elgg-icon-angle-down:before { content: ""; }
+
+.elgg-icon-desktop:before { content: ""; }
+
+.elgg-icon-laptop:before { content: ""; }
+
+.elgg-icon-tablet:before { content: ""; }
+
+.elgg-icon-mobile-phone:before, .elgg-icon-mobile:before { content: ""; }
+
+.elgg-icon-circle-o:before { content: ""; }
+
+.elgg-icon-quote-left:before { content: ""; }
+
+.elgg-icon-quote-right:before { content: ""; }
+
+.elgg-icon-spinner:before { content: ""; }
+
+.elgg-icon-circle:before { content: ""; }
+
+.elgg-icon-mail-reply:before, .elgg-icon-reply:before { content: ""; }
+
+.elgg-icon-github-alt:before { content: ""; }
+
+.elgg-icon-folder-o:before { content: ""; }
+
+.elgg-icon-folder-open-o:before { content: ""; }
+
+.elgg-icon-smile-o:before { content: ""; }
+
+.elgg-icon-frown-o:before { content: ""; }
+
+.elgg-icon-meh-o:before { content: ""; }
+
+.elgg-icon-gamepad:before { content: ""; }
+
+.elgg-icon-keyboard-o:before { content: ""; }
+
+.elgg-icon-flag-o:before { content: ""; }
+
+.elgg-icon-flag-checkered:before { content: ""; }
+
+.elgg-icon-terminal:before { content: ""; }
+
+.elgg-icon-code:before { content: ""; }
+
+.elgg-icon-mail-reply-all:before, .elgg-icon-reply-all:before { content: ""; }
+
+.elgg-icon-star-half-empty:before, .elgg-icon-star-half-full:before, .elgg-icon-star-half-o:before { content: ""; }
+
+.elgg-icon-location-arrow:before { content: ""; }
+
+.elgg-icon-crop:before { content: ""; }
+
+.elgg-icon-code-fork:before { content: ""; }
+
+.elgg-icon-unlink:before, .elgg-icon-chain-broken:before { content: ""; }
+
+.elgg-icon-question:before { content: ""; }
+
+.elgg-icon-info:before { content: ""; }
+
+.elgg-icon-exclamation:before { content: ""; }
+
+.elgg-icon-superscript:before { content: ""; }
+
+.elgg-icon-subscript:before { content: ""; }
+
+.elgg-icon-eraser:before { content: ""; }
+
+.elgg-icon-puzzle-piece:before { content: ""; }
+
+.elgg-icon-microphone:before { content: ""; }
+
+.elgg-icon-microphone-slash:before { content: ""; }
+
+.elgg-icon-shield:before { content: ""; }
+
+.elgg-icon-calendar-o:before { content: ""; }
+
+.elgg-icon-fire-extinguisher:before { content: ""; }
+
+.elgg-icon-rocket:before { content: ""; }
+
+.elgg-icon-maxcdn:before { content: ""; }
+
+.elgg-icon-chevron-circle-left:before { content: ""; }
+
+.elgg-icon-chevron-circle-right:before { content: ""; }
+
+.elgg-icon-chevron-circle-up:before { content: ""; }
+
+.elgg-icon-chevron-circle-down:before { content: ""; }
+
+.elgg-icon-html5:before { content: ""; }
+
+.elgg-icon-css3:before { content: ""; }
+
+.elgg-icon-anchor:before { content: ""; }
+
+.elgg-icon-unlock-alt:before { content: ""; }
+
+.elgg-icon-bullseye:before { content: ""; }
+
+.elgg-icon-ellipsis-h:before { content: ""; }
+
+.elgg-icon-ellipsis-v:before { content: ""; }
+
+.elgg-icon-rss-square:before { content: ""; }
+
+.elgg-icon-play-circle:before { content: ""; }
+
+.elgg-icon-ticket:before { content: ""; }
+
+.elgg-icon-minus-square:before { content: ""; }
+
+.elgg-icon-minus-square-o:before { content: ""; }
+
+.elgg-icon-level-up:before { content: ""; }
+
+.elgg-icon-level-down:before { content: ""; }
+
+.elgg-icon-check-square:before { content: ""; }
+
+.elgg-icon-pencil-square:before { content: ""; }
+
+.elgg-icon-external-link-square:before { content: ""; }
+
+.elgg-icon-share-square:before { content: ""; }
+
+.elgg-icon-compass:before { content: ""; }
+
+.elgg-icon-toggle-down:before, .elgg-icon-caret-square-o-down:before { content: ""; }
+
+.elgg-icon-toggle-up:before, .elgg-icon-caret-square-o-up:before { content: ""; }
+
+.elgg-icon-toggle-right:before, .elgg-icon-caret-square-o-right:before { content: ""; }
+
+.elgg-icon-euro:before, .elgg-icon-eur:before { content: ""; }
+
+.elgg-icon-gbp:before { content: ""; }
+
+.elgg-icon-dollar:before, .elgg-icon-usd:before { content: ""; }
+
+.elgg-icon-rupee:before, .elgg-icon-inr:before { content: ""; }
+
+.elgg-icon-cny:before, .elgg-icon-rmb:before, .elgg-icon-yen:before, .elgg-icon-jpy:before { content: ""; }
+
+.elgg-icon-ruble:before, .elgg-icon-rouble:before, .elgg-icon-rub:before { content: ""; }
+
+.elgg-icon-won:before, .elgg-icon-krw:before { content: ""; }
+
+.elgg-icon-bitcoin:before, .elgg-icon-btc:before { content: ""; }
+
+.elgg-icon-file:before { content: ""; }
+
+.elgg-icon-file-text:before { content: ""; }
+
+.elgg-icon-sort-alpha-asc:before { content: ""; }
+
+.elgg-icon-sort-alpha-desc:before { content: ""; }
+
+.elgg-icon-sort-amount-asc:before { content: ""; }
+
+.elgg-icon-sort-amount-desc:before { content: ""; }
+
+.elgg-icon-sort-numeric-asc:before { content: ""; }
+
+.elgg-icon-sort-numeric-desc:before { content: ""; }
+
+.elgg-icon-thumbs-up:before { content: ""; }
+
+.elgg-icon-thumbs-down:before { content: ""; }
+
+.elgg-icon-youtube-square:before { content: ""; }
+
+.elgg-icon-youtube:before { content: ""; }
+
+.elgg-icon-xing:before { content: ""; }
+
+.elgg-icon-xing-square:before { content: ""; }
+
+.elgg-icon-youtube-play:before { content: ""; }
+
+.elgg-icon-dropbox:before { content: ""; }
+
+.elgg-icon-stack-overflow:before { content: ""; }
+
+.elgg-icon-instagram:before { content: ""; }
+
+.elgg-icon-flickr:before { content: ""; }
+
+.elgg-icon-adn:before { content: ""; }
+
+.elgg-icon-bitbucket:before { content: ""; }
+
+.elgg-icon-bitbucket-square:before { content: ""; }
+
+.elgg-icon-tumblr:before { content: ""; }
+
+.elgg-icon-tumblr-square:before { content: ""; }
+
+.elgg-icon-long-arrow-down:before { content: ""; }
+
+.elgg-icon-long-arrow-up:before { content: ""; }
+
+.elgg-icon-long-arrow-left:before { content: ""; }
+
+.elgg-icon-long-arrow-right:before { content: ""; }
+
+.elgg-icon-apple:before { content: ""; }
+
+.elgg-icon-windows:before { content: ""; }
+
+.elgg-icon-android:before { content: ""; }
+
+.elgg-icon-linux:before { content: ""; }
+
+.elgg-icon-dribbble:before { content: ""; }
+
+.elgg-icon-skype:before { content: ""; }
+
+.elgg-icon-foursquare:before { content: ""; }
+
+.elgg-icon-trello:before { content: ""; }
+
+.elgg-icon-female:before { content: ""; }
+
+.elgg-icon-male:before { content: ""; }
+
+.elgg-icon-gittip:before { content: ""; }
+
+.elgg-icon-sun-o:before { content: ""; }
+
+.elgg-icon-moon-o:before { content: ""; }
+
+.elgg-icon-archive:before { content: ""; }
+
+.elgg-icon-bug:before { content: ""; }
+
+.elgg-icon-vk:before { content: ""; }
+
+.elgg-icon-weibo:before { content: ""; }
+
+.elgg-icon-renren:before { content: ""; }
+
+.elgg-icon-pagelines:before { content: ""; }
+
+.elgg-icon-stack-exchange:before { content: ""; }
+
+.elgg-icon-arrow-circle-o-right:before { content: ""; }
+
+.elgg-icon-arrow-circle-o-left:before { content: ""; }
+
+.elgg-icon-toggle-left:before, .elgg-icon-caret-square-o-left:before { content: ""; }
+
+.elgg-icon-dot-circle-o:before { content: ""; }
+
+.elgg-icon-wheelchair:before { content: ""; }
+
+.elgg-icon-vimeo-square:before { content: ""; }
+
+.elgg-icon-turkish-lira:before, .elgg-icon-try:before { content: ""; }
+
+.elgg-icon-plus-square-o:before { content: ""; }
+
+.elgg-icon-space-shuttle:before { content: ""; }
+
+.elgg-icon-slack:before { content: ""; }
+
+.elgg-icon-envelope-square:before { content: ""; }
+
+.elgg-icon-wordpress:before { content: ""; }
+
+.elgg-icon-openid:before { content: ""; }
+
+.elgg-icon-institution:before, .elgg-icon-bank:before, .elgg-icon-university:before { content: ""; }
+
+.elgg-icon-mortar-board:before, .elgg-icon-graduation-cap:before { content: ""; }
+
+.elgg-icon-yahoo:before { content: ""; }
+
+.elgg-icon-google:before { content: ""; }
+
+.elgg-icon-reddit:before { content: ""; }
+
+.elgg-icon-reddit-square:before { content: ""; }
+
+.elgg-icon-stumbleupon-circle:before { content: ""; }
+
+.elgg-icon-stumbleupon:before { content: ""; }
+
+.elgg-icon-delicious:before { content: ""; }
+
+.elgg-icon-digg:before { content: ""; }
+
+.elgg-icon-pied-piper:before { content: ""; }
+
+.elgg-icon-pied-piper-alt:before { content: ""; }
+
+.elgg-icon-drupal:before { content: ""; }
+
+.elgg-icon-joomla:before { content: ""; }
+
+.elgg-icon-language:before { content: ""; }
+
+.elgg-icon-fax:before { content: ""; }
+
+.elgg-icon-building:before { content: ""; }
+
+.elgg-icon-child:before { content: ""; }
+
+.elgg-icon-paw:before { content: ""; }
+
+.elgg-icon-spoon:before { content: ""; }
+
+.elgg-icon-cube:before { content: ""; }
+
+.elgg-icon-cubes:before { content: ""; }
+
+.elgg-icon-behance:before { content: ""; }
+
+.elgg-icon-behance-square:before { content: ""; }
+
+.elgg-icon-steam:before { content: ""; }
+
+.elgg-icon-steam-square:before { content: ""; }
+
+.elgg-icon-recycle:before { content: ""; }
+
+.elgg-icon-automobile:before, .elgg-icon-car:before { content: ""; }
+
+.elgg-icon-cab:before, .elgg-icon-taxi:before { content: ""; }
+
+.elgg-icon-tree:before { content: ""; }
+
+.elgg-icon-spotify:before { content: ""; }
+
+.elgg-icon-deviantart:before { content: ""; }
+
+.elgg-icon-soundcloud:before { content: ""; }
+
+.elgg-icon-database:before { content: ""; }
+
+.elgg-icon-file-pdf-o:before { content: ""; }
+
+.elgg-icon-file-word-o:before { content: ""; }
+
+.elgg-icon-file-excel-o:before { content: ""; }
+
+.elgg-icon-file-powerpoint-o:before { content: ""; }
+
+.elgg-icon-file-photo-o:before, .elgg-icon-file-picture-o:before, .elgg-icon-file-image-o:before { content: ""; }
+
+.elgg-icon-file-zip-o:before, .elgg-icon-file-archive-o:before { content: ""; }
+
+.elgg-icon-file-sound-o:before, .elgg-icon-file-audio-o:before { content: ""; }
+
+.elgg-icon-file-movie-o:before, .elgg-icon-file-video-o:before { content: ""; }
+
+.elgg-icon-file-code-o:before { content: ""; }
+
+.elgg-icon-vine:before { content: ""; }
+
+.elgg-icon-codepen:before { content: ""; }
+
+.elgg-icon-jsfiddle:before { content: ""; }
+
+.elgg-icon-life-bouy:before, .elgg-icon-life-buoy:before, .elgg-icon-life-saver:before, .elgg-icon-support:before, .elgg-icon-life-ring:before { content: ""; }
+
+.elgg-icon-circle-o-notch:before { content: ""; }
+
+.elgg-icon-ra:before, .elgg-icon-rebel:before { content: ""; }
+
+.elgg-icon-ge:before, .elgg-icon-empire:before { content: ""; }
+
+.elgg-icon-git-square:before { content: ""; }
+
+.elgg-icon-git:before { content: ""; }
+
+.elgg-icon-hacker-news:before { content: ""; }
+
+.elgg-icon-tencent-weibo:before { content: ""; }
+
+.elgg-icon-qq:before { content: ""; }
+
+.elgg-icon-wechat:before, .elgg-icon-weixin:before { content: ""; }
+
+.elgg-icon-send:before, .elgg-icon-paper-plane:before { content: ""; }
+
+.elgg-icon-send-o:before, .elgg-icon-paper-plane-o:before { content: ""; }
+
+.elgg-icon-history:before { content: ""; }
+
+.elgg-icon-circle-thin:before { content: ""; }
+
+.elgg-icon-header:before { content: ""; }
+
+.elgg-icon-paragraph:before { content: ""; }
+
+.elgg-icon-sliders:before { content: ""; }
+
+.elgg-icon-share-alt:before { content: ""; }
+
+.elgg-icon-share-alt-square:before { content: ""; }
+
+.elgg-icon-bomb:before { content: ""; }
+
+.elgg-icon-soccer-ball-o:before, .elgg-icon-futbol-o:before { content: ""; }
+
+.elgg-icon-tty:before { content: ""; }
+
+.elgg-icon-binoculars:before { content: ""; }
+
+.elgg-icon-plug:before { content: ""; }
+
+.elgg-icon-slideshare:before { content: ""; }
+
+.elgg-icon-twitch:before { content: ""; }
+
+.elgg-icon-yelp:before { content: ""; }
+
+.elgg-icon-newspaper-o:before { content: ""; }
+
+.elgg-icon-wifi:before { content: ""; }
+
+.elgg-icon-calculator:before { content: ""; }
+
+.elgg-icon-paypal:before { content: ""; }
+
+.elgg-icon-google-wallet:before { content: ""; }
+
+.elgg-icon-cc-visa:before { content: ""; }
+
+.elgg-icon-cc-mastercard:before { content: ""; }
+
+.elgg-icon-cc-discover:before { content: ""; }
+
+.elgg-icon-cc-amex:before { content: ""; }
+
+.elgg-icon-cc-paypal:before { content: ""; }
+
+.elgg-icon-cc-stripe:before { content: ""; }
+
+.elgg-icon-bell-slash:before { content: ""; }
+
+.elgg-icon-bell-slash-o:before { content: ""; }
+
+.elgg-icon-trash:before { content: ""; }
+
+.elgg-icon-copyright:before { content: ""; }
+
+.elgg-icon-at:before { content: ""; }
+
+.elgg-icon-eyedropper:before { content: ""; }
+
+.elgg-icon-paint-brush:before { content: ""; }
+
+.elgg-icon-birthday-cake:before { content: ""; }
+
+.elgg-icon-area-chart:before { content: ""; }
+
+.elgg-icon-pie-chart:before { content: ""; }
+
+.elgg-icon-line-chart:before { content: ""; }
+
+.elgg-icon-lastfm:before { content: ""; }
+
+.elgg-icon-lastfm-square:before { content: ""; }
+
+.elgg-icon-toggle-off:before { content: ""; }
+
+.elgg-icon-toggle-on:before { content: ""; }
+
+.elgg-icon-bicycle:before { content: ""; }
+
+.elgg-icon-bus:before { content: ""; }
+
+.elgg-icon-ioxhost:before { content: ""; }
+
+.elgg-icon-angellist:before { content: ""; }
+
+.elgg-icon-cc:before { content: ""; }
+
+.elgg-icon-shekel:before, .elgg-icon-sheqel:before, .elgg-icon-ils:before { content: ""; }
+
+.elgg-icon-meanpath:before { content: ""; }
+
+/* ***************************************
+				ICONS
+*************************************** */
+.elgg-icon-arrow-left:before { content: ""; }
+
+.elgg-icon-arrow-right:before { content: ""; }
+
+.elgg-icon-arrow-two-head:before { content: ""; }
+
+.elgg-icon-attention:before { content: ""; }
+
+.elgg-icon-attention-hover:before { content: ""; color: #4690d6; }
+
+.elgg-icon-calendar:before { content: ""; }
+
+.elgg-icon-cell-phone:before { content: ""; }
+
+.elgg-icon-checkmark:before { content: ""; }
+
+.elgg-icon-checkmark-hover:before { content: ""; color: #4690d6; }
+
+.elgg-icon-clip:before { content: ""; }
+
+.elgg-icon-clip-hover:before { content: ""; color: #4690d6; }
+
+.elgg-icon-cursor-drag-arrow:before { content: ""; }
+
+.elgg-icon-delete-alt:before { content: ""; }
+
+.elgg-icon-delete-alt-hover:before { content: ""; color: #4690d6; }
+
+.elgg-icon-delete:before { content: ""; }
+
+.elgg-icon-delete-hover:before { content: ""; color: #4690d6; }
+
+.elgg-icon-download:before { content: ""; }
+
+.elgg-icon-download-hover:before { content: ""; color: #4690d6; }
+
+.elgg-icon-eye:before { content: ""; }
+
+.elgg-icon-facebook:before { content: ""; }
+
+.elgg-icon-grid:before { content: ""; }
+
+.elgg-icon-grid-hover:before { content: ""; color: #4690d6; }
+
+.elgg-icon-home:before { content: ""; }
+
+.elgg-icon-home-hover:before { content: ""; color: #4690d6; }
+
+.elgg-icon-hover-menu:before { content: ""; }
+
+.elgg-icon-hover-menu-hover:before { content: "";}
+
+.elgg-icon-info:before { content: ""; }
+
+.elgg-icon-info-hover:before { content: ""; color: #4690d6; }
+
+.elgg-icon-link:before { content: ""; }
+
+.elgg-icon-link-hover:before { content: ""; color: #4690d6; }
+
+.elgg-icon-list:before { content: ""; }
+
+.elgg-icon-lock-closed:before { content: ""; }
+
+.elgg-icon-lock-open:before { content: ""; }
+
+.elgg-icon-mail-alt:before { content: ""; }
+
+.elgg-icon-mail-alt-hover:before { content: ""; color: #4690d6; }
+
+.elgg-icon-mail:before { content: ""; }
+
+.elgg-icon-mail-hover:before { content: ""; color: #4690d6; }
+
+.elgg-icon-photo:before { content: ""; }
+
+.elgg-icon-print-alt:before { content: ""; }
+
+.elgg-icon-print:before { content: ""; }
+
+.elgg-icon-push-pin-alt:before { content: ""; }
+
+.elgg-icon-push-pin:before { content: ""; }
+
+.elgg-icon-redo:before { content: ""; }
+
+.elgg-icon-refresh:before { content: ""; }
+
+.elgg-icon-refresh-hover:before { content: ""; color: #4690d6; }
+
+.elgg-icon-round-arrow-left:before { content: ""; }
+
+.elgg-icon-round-arrow-right:before { content: ""; }
+
+.elgg-icon-round-checkmark:before { content: ""; }
+
+.elgg-icon-round-minus:before { content: ""; }
+
+.elgg-icon-round-plus:before { content: ""; }
+
+.elgg-icon-rss:before { content: ""; }
+
+.elgg-icon-search-focus:before { content: ""; }
+
+.elgg-icon-search:before { content: ""; }
+
+.elgg-icon-settings-alt:before { content: ""; }
+
+.elgg-icon-settings-alt-hover:before { content: ""; color: #4690d6; }
+
+.elgg-icon-settings:before { content: ""; }
+
+.elgg-icon-share:before { content: ""; }
+
+.elgg-icon-share-hover:before { content: ""; color: #4690d6; }
+
+.elgg-icon-shop-cart:before { content: ""; }
+
+.elgg-icon-shop-cart-hover:before { content: ""; color: #4690d6; }
+
+.elgg-icon-speech-bubble-alt:before { content: ""; }
+
+.elgg-icon-speech-bubble-alt-hover:before { content: ""; color: #4690d6; }
+
+.elgg-icon-speech-bubble:before { content: ""; }
+
+.elgg-icon-speech-bubble-hover:before { content: ""; color: #4690d6; }
+
+.elgg-icon-star-alt:before { content: ""; color: #67080a; }
+
+.elgg-icon-star-empty:before { content: ""; }
+
+.elgg-icon-star-empty-hover:before { content: ""; color: #4690d6; }
+
+.elgg-icon-star:before { content: ""; }
+
+.elgg-icon-star-hover:before { content: ""; color: #4690d6; }
+
+.elgg-icon-tag:before { content: ""; }
+
+.elgg-icon-tag-hover:before { content: ""; color: #4690d6; }
+
+.elgg-icon-thumbs-down-alt:before { content: ""; }
+
+.elgg-icon-thumbs-down-alt-hover:before { content: ""; color: #4690d6; }
+
+.elgg-icon-thumbs-down:before { content: ""; }
+
+.elgg-icon-thumbs-down-hover:before { content: ""; color: #4690d6; }
+
+.elgg-icon-thumbs-up-alt:before { content: ""; }
+
+.elgg-icon-thumbs-up-alt-hover:before { content: ""; color: #4690d6; }
+
+.elgg-icon-thumbs-up:before { content: ""; }
+
+.elgg-icon-thumbs-up-hover:before { content: ""; color: #4690d6; }
+
+.elgg-icon-trash:before { content: ""; }
+
+.elgg-icon-twitter:before { content: ""; }
+
+.elgg-icon-undo:before { content: ""; }
+
+.elgg-icon-user:before { content: ""; }
+
+.elgg-icon-user-hover:before { content: ""; color: #4690d6; }
+
+.elgg-icon-users:before { content: ""; }
+
+.elgg-icon-users-hover:before { content: ""; color: #4690d6; }
+
+.elgg-icon-video:before { content: ""; }
+
+.elgg-ajax-loader { background-image: url("data:image/gif;base64,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"); background-color: transparent; background-repeat: no-repeat; background-position: 50%; min-height: 31px; min-width: 31px; margin: 1.875rem auto; height: 100%; width: 100%; }
+
+.elgg-icon-report-this:before { content: ""; }
+/* ***************************************
+			AVATAR ICONS
+*************************************** */
+.elgg-avatar-tiny { position: relative; display: inline-block; width: 1.5625rem; height: auto; max-width: 100%; display: block; border: none; }
+.elgg-avatar-tiny a > img { width: 100%; height: auto; border-radius: 0; -moz-background-clip: border; -o-background-clip: border; -webkit-background-clip: border; background-clip: border; -moz-background-size: contain; -o-background-size: contain; -webkit-background-size: contain; background-size: contain; z-index: 1; }
+.elgg-avatar-tiny > .elgg-icon-hover-menu { display: none; position: absolute; right: 0; bottom: 0; margin: 0; cursor: pointer; width: 0.625rem; height: 0.625rem; z-index: 2; }
+.elgg-avatar-tiny > .elgg-icon-hover-menu + * { padding: 0; }
+.elgg-avatar-tiny > .elgg-icon-hover-menu:before { content: ""; position: absolute; right: 0; bottom: 0; width: 0px; height: 0px; border-style: solid; border-width: 0 0 0.8125rem 0.8125rem; border-color: transparent transparent white transparent; z-index: 3; }
+.elgg-avatar-tiny > .elgg-icon-hover-menu:after { content: ""; position: absolute; right: 0; bottom: 0; margin: 0; width: 0px; height: 0px; border-style: solid; border-width: 0 0 0.625rem 0.625rem; border-color: transparent transparent #2a77bf transparent; z-index: 4; }
+@media only screen and (min-width: 40.063em) { .elgg-avatar-tiny > .elgg-icon-hover-menu { display: none; } }
+
+.elgg-avatar-small { position: relative; display: inline-block; width: 2.5rem; height: auto; max-width: 100%; display: block; border: none; }
+.elgg-avatar-small a > img { width: 100%; height: auto; border-radius: 0; -moz-background-clip: border; -o-background-clip: border; -webkit-background-clip: border; background-clip: border; -moz-background-size: contain; -o-background-size: contain; -webkit-background-size: contain; background-size: contain; z-index: 1; }
+.elgg-avatar-small > .elgg-icon-hover-menu { display: none; position: absolute; right: 0; bottom: 0; margin: 0; cursor: pointer; width: 0.75rem; height: 0.75rem; z-index: 2; }
+.elgg-avatar-small > .elgg-icon-hover-menu + * { padding: 0; }
+
+.elgg-avatar-small > .elgg-icon-hover-menu:before 
+{ 
+  position: absolute; 
+  bottom: 0; 
+  margin: 0; width: 0px;
+  color: #EB6F36; 
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  height: 0px; 
+  z-index: 4; 
+  font-size: 120%;
+}
+
+@media only screen and (min-width: 40.063em) { .elgg-avatar-small > .elgg-icon-hover-menu { display: none; } }
+
+.elgg-avatar-medium { position: relative; display: inline-block; width: 6.25rem; height: auto; max-width: 100%; display: block; border: none; }
+.elgg-avatar-medium a > img { width: 100%; height: auto; border-radius: 0; -moz-background-clip: border; -o-background-clip: border; -webkit-background-clip: border; background-clip: border; -moz-background-size: contain; -o-background-size: contain; -webkit-background-size: contain; background-size: contain; z-index: 1; }
+.elgg-avatar-medium > .elgg-icon-hover-menu { display: block; position: absolute; right: 0; bottom: 0; margin: 0; cursor: pointer; width: 0.9375rem; height: 0.9375rem; z-index: 2; }
+.elgg-avatar-medium > .elgg-icon-hover-menu + * { padding: 0; }
+.elgg-avatar-medium > .elgg-icon-hover-menu:before { content: ""; position: absolute; right: 0; bottom: 0; width: 0px; height: 0px; border-style: solid; border-width: 0 0 1.125rem 1.125rem; border-color: transparent transparent white transparent; z-index: 3; }
+.elgg-avatar-medium > .elgg-icon-hover-menu:after { content: ""; position: absolute; right: 0; bottom: 0; margin: 0; width: 0px; height: 0px; border-style: solid; border-width: 0 0 0.9375rem 0.9375rem; border-color: transparent transparent #2a77bf transparent; z-index: 4; }
+@media only screen and (min-width: 40.063em) { .elgg-avatar-medium > .elgg-icon-hover-menu { display: none; } }
+
+.elgg-avatar-large { position: relative; display: inline-block; width: 12.5rem; height: auto; max-width: 100%; display: block; border: none; }
+.elgg-avatar-large a > img { width: 100%; height: auto; border-radius: 0; -moz-background-clip: border; -o-background-clip: border; -webkit-background-clip: border; background-clip: border; -moz-background-size: contain; -o-background-size: contain; -webkit-background-size: contain; background-size: contain; z-index: 1; }
+.elgg-avatar-large > .elgg-icon-hover-menu { display: block; position: absolute; right: 0; bottom: 0; margin: 0; cursor: pointer; width: 0.9375rem; height: 0.9375rem; z-index: 2; }
+.elgg-avatar-large > .elgg-icon-hover-menu + * { padding: 0; }
+.elgg-avatar-large > .elgg-icon-hover-menu:before { content: ""; position: absolute; right: 0; bottom: 0; width: 0px; height: 0px; border-style: solid; border-width: 0 0 1.125rem 1.125rem; border-color: transparent transparent white transparent; z-index: 3; }
+.elgg-avatar-large > .elgg-icon-hover-menu:after { content: ""; position: absolute; right: 0; bottom: 0; margin: 0; width: 0px; height: 0px; border-style: solid; border-width: 0 0 0.9375rem 0.9375rem; border-color: transparent transparent #2a77bf transparent; z-index: 4; }
+@media only screen and (min-width: 40.063em) { .elgg-avatar-large > .elgg-icon-hover-menu { display: none; } }
+
+.elgg-avatar > a > img {
+  display: block;
+  border-radius: 50%;
+  width: 24px;
+  float: left;
+}
+.elgg-avatar-tiny > a > img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-clip:  border;
+  background-size: 25px;
+}
+.elgg-avatar-small > a > img {
+  width: 40px;
+  height: 40px;
+
+  /* remove the border-radius if you don't want rounded avatars in supported browsers */
+  border-radius: 50%;
+
+  background-clip:  border;
+  background-size: 40px;
+}
+.elgg-avatar-medium > a > img {
+  width: 100px;
+  height: 100px;
+}
+.elgg-avatar-large {
+  width: 100%;
+}
+.elgg-avatar-large > a > img {
+  width: 100%;
+  height: auto;
+}
+.elgg-state-banned {
+  opacity: 0.5;
+}
+
+/* ***************************************
+			DISTINCT CASES
+*************************************** */
+.elgg-icon-push-pin-alt + a, .elgg-icon-tag + a { margin-left: 10px; }
