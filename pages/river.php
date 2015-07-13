@@ -45,7 +45,10 @@ $options['count'] = false;
 
 $options['pagination'] = false;
 $options['offset'] = 0;
-$options['limit'] = elgg_get_config('default_limit');
+if(elgg_get_config('default_limit'))
+	$options['limit'] = elgg_get_config('default_limit');
+else
+	$options['limit'] = 5;
 
 $script_text = '<script type="text/javascript"> 
 		var options = ' . json_encode($options) . '; 

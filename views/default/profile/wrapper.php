@@ -2,7 +2,27 @@
 /**
  * Profile info box
  */
+$user = elgg_get_page_owner_entity();
 
+if (!$user) {
+  // no user so we quit view
+  echo elgg_echo('viewfailure', array(__FILE__));
+  return TRUE;
+}
+
+// grab the actions and admin menu items from user hover
+$menu = elgg_trigger_plugin_hook('register', "menu:user_hover", array('entity' => $user), array());
+$builder = new ElggMenuBuilder($menu);
+$menu = $builder->getMenu();
+$menu = elgg_trigger_plugin_hook('prepare', "menu:user_hover", array(
+  'menu' => $menu,
+  'entity' => $user,
+  'username' => $user->username,
+  'name' => 'user_hover',
+), $menu);
+
+$actions = elgg_extract('action', $menu, array());
+$admin = elgg_extract('admin', $menu, array());
 // if admin, display admin links
 $admin_links = '';
 if (elgg_is_admin_logged_in() && elgg_get_logged_in_user_guid() != elgg_get_page_owner_guid()) {

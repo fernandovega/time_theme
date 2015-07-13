@@ -38,6 +38,7 @@ $header = elgg_view('page/elements/header', $vars);
 $navbar = elgg_view('page/elements/navbar', $vars);
 $content = elgg_view('page/elements/body', $vars);
 $footer = elgg_view('page/elements/footer', $vars);
+$user_menu = elgg_view('page/elements/sidebar', $vars);
 
 $body = <<<__BODY
 <div class="elgg-page elgg-page-default">
@@ -59,6 +60,9 @@ $body .= elgg_view('page/elements/topbar_wrapper', $vars);
 
 $body .= <<<__BODY
 	<div class="sb-slidebar sb-left sb-style-overlay">
+		<div class="sliderbar-user-menu">
+		 $user_menu
+		</div>
 		<div class="elgg-inner">
 			$navbar
 		</div>

@@ -24,10 +24,14 @@ if (isset($vars['body_attrs'])) {
 	<head>
 		<?php echo $vars["head"]; ?>
 		<style type="text/css">
-		<?php if (elgg_is_logged_in()) : ?>
+		<?php if (elgg_is_logged_in() && elgg_get_context()!='admin') : ?>
 		@media (max-width: 820px) {
 				.logo, .elgg-sidebar{
 					display: none;
+				}
+
+				.sliderbar-user-menu {
+					display: block;
 				}	
 				
 		}
@@ -36,6 +40,10 @@ if (isset($vars['body_attrs'])) {
 			.elgg-avatar-topbar, .logo, .elgg-sidebar{
 				display: none;
 			}
+
+			.sliderbar-user-menu {
+					display: block;
+			}	
 		}
 		<?php endif ?>
 		</style>

@@ -29,7 +29,6 @@ $menu = elgg_trigger_plugin_hook('prepare', "menu:user_hover", array(
 ), $menu);
 
 $actions = elgg_extract('action', $menu, array());
-$admin = elgg_extract('admin', $menu, array());
 
 $profile_actions = '';
 if (elgg_is_logged_in() && $actions) {
@@ -40,7 +39,6 @@ if (elgg_is_logged_in() && $actions) {
 	}
 	$profile_actions .= '</ul>';
 }
-
 
 
 echo <<<HTML

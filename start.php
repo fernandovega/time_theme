@@ -329,7 +329,7 @@ function my_likes_entity_menu_setup($hook, $type, $return, $params) {
 	/* @var ElggEntity $entity */
 
 	if ($entity->canAnnotate(0, 'likes')) {
-		$hasLiked = \Elgg\Likes\DataService::instance()->currentUserLikesEntity($entity->guid);
+		$hasLiked = elgg_annotation_exists($entity->guid, 'likes');
 		
 		// Always register both. That makes it super easy to toggle with javascript
 		$return[] = ElggMenuItem::factory(array(
@@ -395,7 +395,7 @@ function my_likes_river_menu_setup($hook, $type, $return, $params) {
 		return;
 	}
 
-	$hasLiked = \Elgg\Likes\DataService::instance()->currentUserLikesEntity($object->guid);
+	$hasLiked = elgg_annotation_exists($entity->guid, 'likes');
 
 	// Always register both. That makes it super easy to toggle with javascript
 	$return[] = ElggMenuItem::factory(array(

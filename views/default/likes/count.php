@@ -5,7 +5,8 @@
  *  @uses $vars['entity']
  */
 
-$num_of_likes = \Elgg\Likes\DataService::instance()->getNumLikes($vars['entity']);
+//$num_of_likes = \Elgg\Likes\DataService::instance()->getNumLikes($vars['entity']);
+$num_of_likes = likes_count($vars['entity']);
 $guid = $vars['entity']->guid;
 
 if ($num_of_likes) {

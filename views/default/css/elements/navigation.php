@@ -441,6 +441,25 @@
 /* ***************************************
 	OWNER BLOCK
 *************************************** */
+.sliderbar-user-menu{
+	margin:15px 20px;
+	display: none;
+}
+
+.sliderbar-user-menu .elgg-menu-owner-block li a {
+	display: block;
+	margin: 3px 0 5px 0;
+	padding: 2px 4px 2px 0;
+	color: #ffffff;
+}
+.sliderbar-user-menu  .elgg-menu-owner-block li a:hover {
+	color: #50c28c;
+}
+.sliderbar-user-menu  .elgg-menu-owner-block li.elgg-state-selected > a {
+	color: #50c28c;
+	text-decoration: underline;
+}
+
 .elgg-menu-owner-block li a {
 	display: block;
 	margin: 3px 0 5px 0;

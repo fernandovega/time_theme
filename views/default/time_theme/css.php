@@ -380,7 +380,7 @@ html {
 	display: block;
 	width: auto;
 	word-wrap: break-word;
-	margin: 5px 0 0;
+/*	margin: 5px 0 0;*/
 	overflow: visible;
 }
 
