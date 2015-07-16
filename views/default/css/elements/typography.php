@@ -18,11 +18,12 @@ body {
 	  -webkit-font-smoothing: antialiased;
   font-family: 'Lato', 'Sans-Serif';
   font-weight: lighter;
-  background: #F2F2F2;
+  background: url("<?php echo elgg_get_site_url();?>mod/time_theme/graphics/b1.jpg") no-repeat fixed center 0 #F2F2F2;
 }
 
 a {
 	color: #e95725;
+	outline: 0;
 }
 
 a:hover,

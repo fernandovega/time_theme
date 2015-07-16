@@ -18,7 +18,6 @@
 /***** DEFAULT LAYOUT ******/
 <?php // the width is on the page rather than topbar to handle small viewports ?>
 .elgg-page-default {
-	background: url("<?php echo elgg_get_site_url();?>mod/time_theme/graphics/b3.jpg") no-repeat fixed center 0 #f2f2f2;
   min-width: 800px;
 }
 .elgg-page-default .elgg-page-header > .elgg-inner {

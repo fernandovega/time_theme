@@ -164,7 +164,7 @@ function time_theme_pagesetup() {
 				'alt' => $viewer->name,
 				'title' => elgg_echo('profile'),
 				'class' => 'elgg-border-plain elgg-transition',
-			)).'<span class="profile-text">'.$viewer->name.'</span>',
+			)).'<span class="profile-text">'.elgg_get_excerpt($viewer->name, 20).'</span>',
 			'priority' => 500,
 			'link_class' => 'elgg-topbar-avatar',
 			'item_class' => 'elgg-avatar elgg-avatar-topbar',
@@ -335,7 +335,7 @@ function my_likes_entity_menu_setup($hook, $type, $return, $params) {
 		$return[] = ElggMenuItem::factory(array(
 			'name' => 'likes',
 			'href' => elgg_add_action_tokens_to_url("/action/likes/add?guid={$entity->guid}"),
-			'text' => '<i class="fa fa-heart-o fa-lg"></i>',
+			'text' => '<i class="fa fa-thumbs-o-up fa-lg"></i>',
 			'title' => elgg_echo('likes:likethis'),
 			'item_class' => $hasLiked ? 'hidden' : '',
 			'priority' => 100,
@@ -343,7 +343,7 @@ function my_likes_entity_menu_setup($hook, $type, $return, $params) {
 		$return[] = ElggMenuItem::factory(array(
 			'name' => 'unlike',
 			'href' => elgg_add_action_tokens_to_url("/action/likes/delete?guid={$entity->guid}"),
-			'text' => '<i class="fa fa-heart fa-lg" style="color:#50C28C"></i>',
+			'text' => '<i class="fa fa-thumbs-up fa-lg" style="color:#50C28C"></i>',
 			'title' => elgg_echo('likes:remove'),
 			'item_class' => $hasLiked ? '' : 'hidden',
 			'priority' => 100,
@@ -401,7 +401,7 @@ function my_likes_river_menu_setup($hook, $type, $return, $params) {
 	$return[] = ElggMenuItem::factory(array(
 		'name' => 'likes',
 		'href' => elgg_add_action_tokens_to_url("/action/likes/add?guid={$object->guid}"),
-		'text' => '<i class="fa fa-heart-o fa-lg"></i>',
+		'text' => '<i class="fa fa-thumbs-o-up fa-lg"></i>',
 		'title' => elgg_echo('likes:likethis'),
 		'item_class' => $hasLiked ? 'hidden' : '',
 		'priority' => 100,
@@ -409,7 +409,7 @@ function my_likes_river_menu_setup($hook, $type, $return, $params) {
 	$return[] = ElggMenuItem::factory(array(
 		'name' => 'unlike',
 		'href' => elgg_add_action_tokens_to_url("/action/likes/delete?guid={$object->guid}"),
-		'text' => '<i class="fa fa-heart fa-lg" style="color:#50C28C"></i>',
+		'text' => '<i class="fa fa-thumbs-o-up fa-lg" style="color:#50C28C"></i>',
 		'title' => elgg_echo('likes:remove'),
 		'item_class' => $hasLiked ? '' : 'hidden',
 		'priority' => 100,
