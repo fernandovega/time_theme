@@ -340,10 +340,11 @@ function my_likes_entity_menu_setup($hook, $type, $return, $params) {
 			'item_class' => $hasLiked ? 'hidden' : '',
 			'priority' => 100,
 		));
+		
 		$return[] = ElggMenuItem::factory(array(
 			'name' => 'unlike',
 			'href' => elgg_add_action_tokens_to_url("/action/likes/delete?guid={$entity->guid}"),
-			'text' => '<i class="fa fa-thumbs-up fa-lg" style="color:#50C28C"></i>',
+			'text' => '<i class="fa  fa-thumbs-up fa-lg" style="color:#50C28C"></i>',
 			'title' => elgg_echo('likes:remove'),
 			'item_class' => $hasLiked ? '' : 'hidden',
 			'priority' => 100,
@@ -395,7 +396,7 @@ function my_likes_river_menu_setup($hook, $type, $return, $params) {
 		return;
 	}
 
-	$hasLiked = \Elgg\Likes\DataService::instance()->currentUserLikesEntity($entity->guid);
+	$hasLiked = \Elgg\Likes\DataService::instance()->currentUserLikesEntity($object->guid);
 
 	// Always register both. That makes it super easy to toggle with javascript
 	$return[] = ElggMenuItem::factory(array(
@@ -409,7 +410,7 @@ function my_likes_river_menu_setup($hook, $type, $return, $params) {
 	$return[] = ElggMenuItem::factory(array(
 		'name' => 'unlike',
 		'href' => elgg_add_action_tokens_to_url("/action/likes/delete?guid={$object->guid}"),
-		'text' => '<i class="fa fa-thumbs-o-up fa-lg" style="color:#50C28C"></i>',
+		'text' => '<i class="fa  fa-thumbs-up fa-lg" style="color:#50C28C"></i>',
 		'title' => elgg_echo('likes:remove'),
 		'item_class' => $hasLiked ? '' : 'hidden',
 		'priority' => 100,
