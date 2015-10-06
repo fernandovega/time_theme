@@ -49,6 +49,7 @@ if (isset($vars['body_attrs'])) {
 		</style>
 		
 		<link href='//fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+		<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 	</head>
 	<body<?php echo $attrs ?>>
 		<?php echo $vars["body"]; ?>
