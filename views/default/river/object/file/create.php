@@ -13,7 +13,7 @@ $object = $item->getObjectEntity();
 $excerpt = strip_tags($object->description);
 $excerpt = elgg_get_excerpt($excerpt);
 
-$preview_size = 'medium';
+$preview_size = 'master';
 
 $title = $object->title;
 $objectname = $object->originalfilename;
@@ -22,12 +22,16 @@ $download_url = elgg_get_site_url() .  "file/download/$object->guid";
 
 switch ($object->simpletype) {
     case 'image':
-      $attachments = elgg_view_entity_icon($object, $preview_size, array(
-        'href' => $object->getIconURL('largue'),
-        'img_class' => 'file-photo',
-        'link_class' => 'elgg-lightbox-photo',
-           'is_trusted' => true,
-      )).'<br>'.$objectname;
+      if($mime == 'image/gif')
+        $attachments = '<img src="'.$download_url.'" title="'.$mime.'"/>';
+      else{
+        $attachments = elgg_view_entity_icon($object, $preview_size, array(
+          'href' => $object->getIconURL('master'),
+          'img_class' => 'file-photo',
+          'link_class' => 'elgg-lightbox-photo',
+             'is_trusted' => true,
+        )).'<br>';
+      }
       break;
     case 'video':
       $attachments = '
@@ -38,6 +42,7 @@ switch ($object->simpletype) {
       </div>
       ';
       break;
+      
     case 'audio':
       $attachments = '<audio controls>
         <source src="'.$download_url.'" type="'.$mime.'">
